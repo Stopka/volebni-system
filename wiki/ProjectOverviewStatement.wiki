@@ -1,2 +1,7 @@
-
 = Project Overview Statement =
+
+===Zadání projektu====
+Cílem projektu je vytvořit jednotný systém správy voličů pro dva již existující volební systémy:
+  * Mobilní hlasovací zařízení na platformě Android (veřejné hlasování)
+  * Elektronické volby (tajné hlasování pomocí kiosků)
+Výsledkem by mělo být zjednodušení registračního procesu při současném používání obou systémů.
