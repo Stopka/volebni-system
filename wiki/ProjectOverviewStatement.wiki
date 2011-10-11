@@ -13,3 +13,9 @@ Cílem projektu je vytvořit jednotný systém správy voličů pro dva již exi
 
 ===Kritéria úspěchu====
 Výsledkem by mělo být zjednodušení a registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť.
+
+===Rizika====
+V průběhu vývoje se mohou vyskytnout komplikace jako např.
+  * Chyby v analýze nebo v implementaci projektu
+  * Odpadnutí člena týmu
+  * Nedodržení deadline projektu
