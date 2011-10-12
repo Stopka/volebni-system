@@ -3,13 +3,12 @@
 = Project Overview Statement =
 
 ===Problém====
-Na volebních mýtincích se často používají veřejné i tajné hlasovací systémy. Do obou systémů se ale voliči musí registrovat samostatně. To znamená ztrátu času a zbytečně komplikovaný proces registrace.
+Na volebních mýtincích se často hlasuje tajně i veřejně a často se i volí. Nyní máme k dispozici dva samostatné systémy - jeden pro volby a jeden pro jednoduché hlasování prostřednictvím mobilních zařízení. Do obou systémů se ale voliči musí registrovat samostatně. To znamená ztrátu času a zbytečně komplikovaný proces registrace.
 
 ===Zadání projektu====
-Cílem projektu je vytvořit jednotný systém správy voličů pro dva již existující volební systémy:
+Cílem projektu je sloučit dva naprosto samostatné projekty do jednoho. Vytvoříme jednotný systém správy voličů pro dva již existující volební systémy:
   * Mobilní hlasovací zařízení na platformě Android (veřejné hlasování)
   * Elektronické volby (tajné hlasování pomocí kiosků)
-
 
 ===Kritéria úspěchu====
 Výsledkem by mělo být zjednodušení a registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť.
