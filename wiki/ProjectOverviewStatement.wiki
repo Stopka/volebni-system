@@ -33,21 +33,21 @@ V průběhu vývoje se mohou vyskytnout komplikace.
 
 ==FURPS==
 
-Funkcionalita:
+=Funkcionalita:=
 
 Stejná databáze uživatelů pro oba systémy bude usnadňovat registraci,která bude tímto ulehčená hlavně z pozice voličů, kteří se nebudou muset registrovat několikrát. Dále bude fungovat rozlišování rolí a s ním související práva uživatelů v systému a možnost přiřazení více rolí jednomu uživateli.
 
-Užitečnost:
+=Užitečnost:=
 
 Usnadnění realizace voleb
 Usnadnění správy a evidence uživatelů
 
-Spolehlivost:
+=Spolehlivost:=
 
  * Zabezpečný protokol umožňující tajné hlasování
  * Ochrana osobních údajů
 
-Výkon:
+=Výkon:=
 
  * Část aplikace poběží na serveru glassfish, část bude samostatná Java SE aplikace. 
  * Obě tyto části spolu budou sdílet data o uživatelích.
