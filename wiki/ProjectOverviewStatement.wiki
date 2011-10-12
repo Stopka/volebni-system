@@ -6,13 +6,11 @@
 Na volebních mítincích se často hlasuje tajně i veřejně a často se i volí. Nyní máme k dispozici dva samostatné systémy - jeden pro volby a jeden pro jednoduché hlasování prostřednictvím mobilních zařízení. Do obou systémů se ale voliči musí registrovat samostatně. To znamená ztrátu času a zbytečně komplikovaný proces registrace.
 
 ===Zadání projektu====
-Cílem projektu je sloučit dva naprosto samostatné projekty do jednoho. Vytvoříme jednotný systém správy voličů pro dva již existující volební systémy:
-  * Mobilní hlasovací zařízení na platformě Android (veřejné hlasování)
-  * Elektronické volby (tajné hlasování pomocí kiosků)
-Dále bude nutné předělat datový model systému Elektronické volby
+Cílem projektu je sloučit dva naprosto samostatné projekty do jednoho. Jedním s těchto autonomních projektů jsou Elektronické volby Tomáše Čerevky, které řeší problém tajných voleb pomocí volebních kiosků. Druhým projektem, na který navazujeme je Androidí přenosný hlasovací systém Radovana Murina. Ten řeší spíše otázku veřejného hlasování či testů. My k těmto aplikacím vytvoříme jednotný systém správy voličů.
+Dále upravíme datový model systému Elektronické volby a odpovídající business logiku tak, aby odpovídal naši novým požadavkům, a abychom odstranili závady v návrhu.
 
 ===Kritéria úspěchu====
-Výsledkem by mělo být zjednodušení a registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť.
+Výsledkem by mělo být zjednodušení a registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť. Dál
 
 ===Rizika====
 V průběhu vývoje se mohou vyskytnout komplikace jako např.
@@ -44,10 +42,11 @@ Spolehlivost:
 
 Odolnost vůči výpadkům proudu, serveru
 Zabezpečný protokol umožňující tajné hlasování
+Ochrana osobních údajů
 
 Výkon:
 
-Aplikace El. volby poběží na serveru glassfish
+Aplikace El. volby poběží z části na serveru glassfish a z části bude jako samostatná Java SE aplikace. Obě tyto části spolu budou sdílet data.
 
 Rozšiřitelnost:
 
