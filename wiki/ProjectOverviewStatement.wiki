@@ -9,6 +9,7 @@ Na volebních mýtincích se často hlasuje tajně i veřejně a často se i vol
 Cílem projektu je sloučit dva naprosto samostatné projekty do jednoho. Vytvoříme jednotný systém správy voličů pro dva již existující volební systémy:
   * Mobilní hlasovací zařízení na platformě Android (veřejné hlasování)
   * Elektronické volby (tajné hlasování pomocí kiosků)
+Dále bude nutné předělat datový model systému Elektronické volby
 
 ===Kritéria úspěchu====
 Výsledkem by mělo být zjednodušení a registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť.
@@ -18,3 +19,29 @@ V průběhu vývoje se mohou vyskytnout komplikace jako např.
   * Chyby v analýze nebo v implementaci projektu
   * Odpadnutí člena týmu
   * Nedodržení deadline projektu
+
+===Funkční požadavky===
+Společná databáze pro oba systémy
+Společný registračního systému
+Přihlašování pomocí otisku prstů
+Umožnění tajného hlasovéní
+Evidence přítomnosti uživatelů
+
+==Nefunkčni požadavky===
+
+==FURPS==
+
+Funkcionalita:
+
+Stejná databáze uživatelů pro oba systémy
+Rozlišování rolí 
+Možnost více rolí pro jednotlivé uživatele
+
+Užitečnost:
+
+Usnadnění realizace voleb
+Usnadnění správy a evidence uživatelů
+
+Spolehlivost:
+
+Výkon:
