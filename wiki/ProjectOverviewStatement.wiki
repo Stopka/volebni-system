@@ -44,14 +44,15 @@ Usnadnění správy a evidence uživatelů
 
 Spolehlivost:
 
- *Zabezpečný protokol umožňující tajné hlasování
- *Ochrana osobních údajů
+ * Zabezpečný protokol umožňující tajné hlasování
+ * Ochrana osobních údajů
 
 Výkon:
 
- *část aplikace poběží na serveru glassfish, část bude samostatná Java SE aplikace. 
- *Obě tyto části spolu budou sdílet data o uživatelích.
+ * Část aplikace poběží na serveru glassfish, část bude samostatná Java SE aplikace. 
+ * Obě tyto části spolu budou sdílet data o uživatelích.
 
 Rozšiřitelnost:
-
- *Možnost vytvořit i jiné druhy voleb, jako test atd.
+ * Možnost vytvořit i jiné druhy voleb, jako test atd.
+ * Jiné způsoby registrace
+ * Jiné způsoby ověřování totožnosti
