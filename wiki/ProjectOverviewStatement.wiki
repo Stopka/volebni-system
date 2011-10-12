@@ -5,24 +5,31 @@
 ===Problém====
 Na volebních mítincích se často hlasuje tajně i veřejně a často se i volí. Nyní máme k dispozici dva samostatné systémy - jeden pro volby a jeden pro jednoduché hlasování prostřednictvím mobilních zařízení. Do obou systémů se ale voliči musí registrovat samostatně. To znamená ztrátu času a zbytečně komplikovaný proces registrace.
 
-===Zadání projektu====
+===Cíle projektu====
 Cílem projektu je sloučit dva naprosto samostatné projekty do jednoho. Jedním s těchto autonomních projektů jsou Elektronické volby Tomáše Čerevky, které řeší problém tajných voleb pomocí volebních kiosků. Druhým projektem, na který navazujeme je Androidí přenosný hlasovací systém Radovana Murina. Ten řeší spíše otázku veřejného hlasování či testů. My k těmto aplikacím vytvoříme jednotný systém správy voličů.
-Dále upravíme datový model systému Elektronické volby a odpovídající business logiku tak, aby odpovídal naši novým požadavkům, a abychom odstranili závady v návrhu. K datovému modelu bude potřeba přidat moožnost přidání více rolí jednotlivýým uživatelům a také umožnění například volení volebním komisařů, kteří mají rovněž roli voličů, ale v současném stavu se jim neobjeví možnost hlasovat. U aplikace pro mobilní telefony android zanalyzujeme problémy s připojením aplikace k serveru, pokusíme se navrhnout a implementovat nápravu.
+Dále upravíme datový model systému Elektronické volby a odpovídající business logiku tak, aby odpovídal naši novým požadavkům, a abychom odstranili závady v návrhu. K datovému modelu bude potřeba přidat možnost přidání více rolí jednotlivým uživatelům a také umožnění například volení volebním komisařů, kteří mají rovněž roli voličů, ale v současném stavu se jim neobjeví možnost hlasovat. U aplikace pro mobilní telefony android zanalyzujeme problémy s připojením aplikace k serveru, pokusíme se navrhnout a implementovat nápravu.
 
 ===Kritéria úspěchu====
 Výsledkem by mělo být zjednodušení registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť a systém bude správně fungovat.
 
 ===Rizika====
 V průběhu vývoje se mohou vyskytnout komplikace.  
-  * Chyby v analýze nebo v implementaci projektu
-  * Nedodržení deadline projektu
+  * Chyby v analýze nebo v implementaci projektu - tento problém se budeme snažit minimalizovat důkladnou analýzou.
+  * Selhání hardwaru - má pouze krátkodobé důsledky
+  * Odpadnutí člena týmu 
+
 
 ===Funkční požadavky===
-Společná databáze pro oba systémy
-Společný registračního systému
-Přihlašování pomocí otisku prstů
-Umožnění tajného hlasovéní
-Evidence přítomnosti uživatelů
+ *Společná databáze voličů pro oba systémy
+ *Společná registrační část systému
+ *Přihlašování pomocí otisku prstů
+ *Umožnění tajného hlasování
+ *Evidence přítomnosti uživatelů
+ *Zobrazení výsledků voleb/hlasování
+ *Hlasování pomocí telefonu android
+
+===Nefunkční požadavky===
+ *Připojení k internetu
 
 ==FURPS==
 
@@ -37,14 +44,14 @@ Usnadnění správy a evidence uživatelů
 
 Spolehlivost:
 
-Odolnost vůči výpadkům proudu, serveru
-Zabezpečný protokol umožňující tajné hlasování
-Ochrana osobních údajů
+ *Zabezpečný protokol umožňující tajné hlasování
+ *Ochrana osobních údajů
 
 Výkon:
 
-Aplikace El. volby poběží z části na serveru glassfish a z části bude jako samostatná Java SE aplikace. Obě tyto části spolu budou sdílet data.
+ *část aplikace poběží na serveru glassfish, část bude samostatná Java SE aplikace. 
+ *Obě tyto části spolu budou sdílet data o uživatelích.
 
 Rozšiřitelnost:
 
-Možnost vytvořit i jiné druhy voleb, jako test atd.
+ *Možnost vytvořit i jiné druhy voleb, jako test atd.
