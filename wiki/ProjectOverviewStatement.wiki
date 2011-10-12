@@ -44,4 +44,13 @@ Usnadnění správy a evidence uživatelů
 
 Spolehlivost:
 
+Odolnost vůči výpadkům proudu, serveru
+Zabezpečný protokol umožňující tajné hlasování
+
 Výkon:
+
+Aplikace El. volby poběží na serveru glassfish
+
+Rozšiřitelnost:
+
+Možnost vytvořit i jiné druhy voleb, jako test atd.
