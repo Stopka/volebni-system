@@ -27,8 +27,6 @@ Přihlašování pomocí otisku prstů
 Umožnění tajného hlasovéní
 Evidence přítomnosti uživatelů
 
-==Nefunkčni požadavky===
-
 ==FURPS==
 
 Funkcionalita:
