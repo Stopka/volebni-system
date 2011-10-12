@@ -20,16 +20,16 @@ V průběhu vývoje se mohou vyskytnout komplikace.
 
 
 ===Funkční požadavky===
- *Společná databáze voličů pro oba systémy
- *Společná registrační část systému
- *Přihlašování pomocí otisku prstů
- *Umožnění tajného hlasování
- *Evidence přítomnosti uživatelů
- *Zobrazení výsledků voleb/hlasování
- *Hlasování pomocí telefonu android
+ * Společná databáze voličů pro oba systémy
+ * Společná registrační část systému
+ * Přihlašování pomocí otisku prstů
+ * Umožnění tajného hlasování
+ * Evidence přítomnosti uživatelů
+ * Zobrazení výsledků voleb/hlasování
+ * Hlasování pomocí telefonu android
 
 ===Nefunkční požadavky===
- *Připojení k internetu
+ * Připojení k internetu
 
 ==FURPS==
 
