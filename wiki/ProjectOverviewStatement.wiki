@@ -12,6 +12,7 @@ Dále upravíme datový model systému Elektronické volby a odpovídající bus
 ==Kritéria úspěchu==
  * Výsledkem by mělo být zjednodušení registračního procesu při současném používání obou systémů. 
  * Odpadne nutnost registrace do každého systému zvlášť a systém bude správně fungovat.
+ * Splnění všech požadavků 
 
 ==Rizika==
 V průběhu vývoje se mohou vyskytnout komplikace.  
