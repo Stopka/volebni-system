@@ -10,7 +10,8 @@ Cílem projektu je sloučit dva naprosto samostatné projekty do jednoho. Jední
 Dále upravíme datový model systému Elektronické volby a odpovídající business logiku tak, aby odpovídal naši novým požadavkům, a abychom odstranili závady v návrhu. K datovému modelu bude potřeba přidat možnost přidání více rolí jednotlivým uživatelům a také umožnění například volení volebním komisařů, kteří mají rovněž roli voličů, ale v současném stavu se jim neobjeví možnost hlasovat. U aplikace pro mobilní telefony android zanalyzujeme problémy s připojením aplikace k serveru, pokusíme se navrhnout a implementovat nápravu.
 
 ==Kritéria úspěchu==
-Výsledkem by mělo být zjednodušení registračního procesu při současném používání obou systémů. Odpadne nutnost registrace do každého systému zvlášť a systém bude správně fungovat.
+* Výsledkem by mělo být zjednodušení registračního procesu při současném používání obou systémů. 
+* Odpadne nutnost registrace do každého systému zvlášť a systém bude správně fungovat.
 
 ==Rizika==
 V průběhu vývoje se mohou vyskytnout komplikace.  
