@@ -22,17 +22,22 @@ V průběhu vývoje se mohou vyskytnout komplikace.
   * Odpadnutí člena týmu 
 
 
-==Funkční požadavky==
- * Společná databáze voličů pro oba systémy
- * Společná registrační část systému
- * Přihlašování pomocí otisku prstů
- * Umožnění tajného hlasování
- * Evidence přítomnosti uživatelů
- * Zobrazení výsledků voleb/hlasování
- * Hlasování pomocí telefonu android
+==Funkční požadavky== 
+ * Systém bude umožňovat registraci voličů
+ * Systém bude umožňovat ověření uživatele pomocí otisku prstu
+ * Systém bude umožňovat ověření uživatele pomocí jména a hesla
+ * Systém bude umožňovat tajné i veřejné hlasování
+ * Systém bude umožňovat evidenci přítomnosti uživatelů
+ * Systém bude umožňovat zobrazení výsledků voleb/hlasování
+ * Systém bude umožňovat veřejné hlasování pomocí telefonu android
+ * Systém bude umožňovat tajné hlasování pomocí volebního kiosku
+
 
 ==Nefunkční požadavky==
- * Připojení k internetu
+ * Systém bude mít společnou databázi voličů pro oba systémy
+ * Systém poběží na platformě Java SE/EE
+ * Mobilní klient poběží na platformě Android
+ * V nové registrační části bude použita souborová databáze
 
 ==FURPS==
 
