@@ -47,17 +47,13 @@ Stejná databáze uživatelů pro oba systémy bude usnadňovat registraci,kter�
 
 ===Užitečnost:===
 
-Usnadnění realizace voleb
-Usnadnění správy a evidence uživatelů
+Spojení systémů usnadní realizace voleb a hlasování a zjednoduší správu a evidenci uživatelů.
 
 ===Spolehlivost:===
 
- * Systém bude průběžně uchovávat data v databázi. Při výpadku energie by tedy nemělo dojít ke ztrátě přijatých hlasů a dalších dat. 
- * Ochrana osobních údajů
+ * Při výpadku energie či pádu systému zůstanou nedojde ke ztrátě již přijatých potvrzených dat (myšleno hlasů či registrací, jež systém potvrdil jako přijaté).
 
 ===Výkon:===
-
- * Část aplikace poběží na serveru glassfish, část bude samostatná Java SE aplikace. 
  * Doporučené požadavky na systém:
     * CPU 2Ghz a vyšší
     * 1GB RAM
@@ -66,6 +62,6 @@ Usnadnění správy a evidence uživatelů
  * Odezva systému při doporučené konfiguraci bude plynulá až do 100 současně připojených uživatelů.
 
 ===Rozšiřitelnost:===
- * Možnost vytvořit i jiné druhy voleb, jako test atd.
+ * Možnost vytvořit i jiné druhy voleb či hlasování (např.: test atd.)
  * Jiné způsoby registrace (např. přes SMS)
  * Jiné způsoby ověřování totožnosti (použití dalších biometrických údajů, použití přihlašovacích certifikátů nebo čipových karet)
