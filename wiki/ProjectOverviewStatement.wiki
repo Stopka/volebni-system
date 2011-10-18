@@ -52,15 +52,20 @@ Usnadnění správy a evidence uživatelů
 
 ===Spolehlivost:===
 
- * Zabezpečný protokol umožňující tajné hlasování
+ * Systém bude průběžně uchovávat data v databázi. Při výpadku energie by tedy nemělo dojít ke ztrátě přijatých hlasů a dalších dat. 
  * Ochrana osobních údajů
 
 ===Výkon:===
 
  * Část aplikace poběží na serveru glassfish, část bude samostatná Java SE aplikace. 
- * Obě tyto části spolu budou sdílet data o uživatelích.
+ * Doporučené požadavky na systém:
+    * CPU 2Ghz a vyšší
+    * 1GB RAM
+    * 5GB volného místa na HDD
+    * Připojení k síti o rychlost alespoň 10Mbit
+ * Odezva systému při doporučené konfiguraci bude plynulá až do 100 současně připojených uživatelů.
 
 ===Rozšiřitelnost:===
  * Možnost vytvořit i jiné druhy voleb, jako test atd.
- * Jiné způsoby registrace
- * Jiné způsoby ověřování totožnosti
+ * Jiné způsoby registrace (např. přes SMS)
+ * Jiné způsoby ověřování totožnosti (použití dalších biometrických údajů, použití přihlašovacích certifikátů nebo čipových karet)
