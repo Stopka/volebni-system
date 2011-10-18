@@ -52,6 +52,8 @@ Spojení systémů usnadní realizace voleb a hlasování a zjednoduší správu
 ===Spolehlivost:===
 
  * Při výpadku energie či pádu systému zůstanou nedojde ke ztrátě již přijatých potvrzených dat (myšleno hlasů či registrací, jež systém potvrdil jako přijaté).
+ * Pokud se dojde ke ztrátě hlasu během jeho putování systémem, voliči bude umožněno hlasovat znovu.
+ * Servery budou mít UPS nebo baterie.
 
 ===Výkon:===
  * Doporučené požadavky na systém:
