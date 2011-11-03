@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities.utils;
+package businesstier.utils;
 
 import java.util.Random;
 
@@ -17,7 +17,7 @@ public class Generator {
      * Délka generovaného řetězce. Pokud bude menšá než 0 a větší než 100 tak
      * se metoda {@link Generator#randomString()} neprovede a vrátí {@code null}.
      */
-    public static int LENGTH = 8;
+    public static final int LENGTH = 8;
     
     private static Random rnd = new Random();
 

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package core.data_tier.entities;
 
 import java.util.*;
 
@@ -20,14 +20,14 @@ public class Action {
     private String place;
     private String name;
     
-    private List<User> participants;
+    private List<Participant> participants;
     
     public Action(Calendar startDate, Calendar endDate, String place, String name){
         this.startDate = startDate;
         this.endDate = endDate;
         this.place = place;
         this.name = name;
-        participants = new ArrayList<User>();
+        participants = new ArrayList<Participant>();
     }
     
     public Action(Calendar startDate, Calendar endDate, String place, String name, String description){
@@ -36,10 +36,10 @@ public class Action {
         this.place = place;
         this.name = name;
         this.description = description;
-        participants = new ArrayList<User>();
+        participants = new ArrayList<Participant>();
     }
     
-    public void addUser(User user){
+    public void addUser(Participant user){
         participants.add(user);
     }
 
@@ -51,7 +51,7 @@ public class Action {
         return endDate;
     }
 
-    public User getUser(User u) {
+    public Participant getUser(Participant u) {
         int index = participants.indexOf(u);
         if(index != -1)
             return participants.get(index);
