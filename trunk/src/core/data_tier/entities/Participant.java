@@ -2,16 +2,16 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package core.data_tier.entities;
 
-import entities.utils.Generator;
+import businesstier.utils.Generator;
 import java.util.Calendar;
 
 /**
  * Třída user reprezentuje uživatele systému, při počáteční registraci
  * @author Lahvi
  */
-public class User {
+public class Participant {
     
     
     
@@ -23,6 +23,7 @@ public class User {
     private String password;
     private int personalCardID;
     private Presence presence;
+    private boolean completeReg;
    
     /**
      * 
@@ -30,10 +31,11 @@ public class User {
      * @param address
      * @param personalCardID 
      */
-    public User(String name, String address, int personalCardID){
+    public Participant(String name, String address, int personalCardID){
         this.name = name;
         this.address = address;
         this.personalCardID = personalCardID;
+        completeReg = false;
         presence = new Presence();
     }
 
@@ -84,14 +86,6 @@ public class User {
     public void setLogin(String login) {
         this.login = login;
     }
-    
-    /**
-     * 
-     */
-    public void generateLogin(){
-        this.login = Generator.randomString(User.LEN);
-    }
-
     /**
      * 
      * @return 
@@ -123,24 +117,22 @@ public class User {
     public void setPassword(String passwd){
         this.password = passwd;
     }
+    
+    public Presence getPresence(){
+        return presence;
+    }
 
     /**
-     * Metoda vygneruje náhodné heslo.
+     * @return the completeReg
      */
-    public void generatePassword() {
-        password = Generator.randomString(User.LEN);
+    public boolean isCompleteReg() {
+        return completeReg;
     }
-    
-    public void setPresence(boolean presence){
-        this.presence.setPresence(presence);
+
+    /**
+     * @param completeReg the completeReg to set
+     */
+    public void setCompleteReg() {
+        this.completeReg = true;
     }
-    
-    public boolean isPresence(){
-        return this.presence.isPresent();
-    }
-    
-    public boolean isPresence(Calendar currentTime){
-        return presence.isPresent(currentTime);
-    }
-    
 }

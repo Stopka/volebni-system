@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package entities;
+package core.data_tier.entities;
 
 import java.util.*;
 
@@ -65,9 +65,15 @@ public class Presence {
      * @return pokud se v době dané parametrem účastník na akci nacházel tak vrací
      * {@code true}, pokud ne tak vrací {@code false}.
      */
-    public boolean isPresent(Calendar doba) {
-        
-        
+    public boolean isPresent(Calendar doba) {       
         return false;
+    }
+    
+    public void addDeparture(Calendar depTime){
+        departures.add(depTime);
+    }
+    
+    public void addArrival(Calendar arrTime){
+        arrivals.add(arrTime);
     }
 }
