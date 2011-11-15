@@ -31,6 +31,8 @@ import cz.cvut.fel.mvod.common.Voter;
 import cz.cvut.fel.mvod.common.Voting;
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactory;
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactoryImpl;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -159,6 +161,13 @@ public class DAOFacadeImpl implements DAOFacade {
 			for(Voter voter: votersDB.retrieveVoters()) {
 				voters.saveVoter(voter);
 			}
+		}
+	}
+        
+        @Override
+	public void retrieveVotersFromRegSys(List<RegSysParticipant> participant_list, RegSysAction akce) throws DAOException {
+		synchronized(votersDB) {
+			// TODO
 		}
 	}
 
