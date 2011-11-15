@@ -30,6 +30,7 @@ import cz.cvut.fel.mvod.common.Question;
 import cz.cvut.fel.mvod.common.Vote;
 import cz.cvut.fel.mvod.common.Voter;
 import cz.cvut.fel.mvod.common.Voting;
+import java.util.List;
 
 /**
  * Poskytuje rozhraní pro jednodušší provádění nejčastějších operací.
@@ -83,4 +84,10 @@ public interface DAOFacade {
 	 * @throws DAOException pokud operace selže
 	 */
 	void retrieveVotersFromDatabase() throws DAOException;
+        
+        /**
+	 * Načte voliče z registračního systému a uloží
+	 * @throws DAOException pokud operace selže
+	 */
+	void retrieveVotersFromRegSys(List<RegSysParticipant> participant_list, RegSysAction akce) throws DAOException;
 }

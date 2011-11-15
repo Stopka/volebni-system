@@ -303,6 +303,10 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 			showError(GlobalSettingsAndNotifier.singleton.messages.getString("databaseFailErr"));
 		}
 	}
+        
+        def importVotersFromRegSys = {
+		importRegSysDialog()
+	}
 
 	def importVotersFromFile = {
 		def file = showOpenDialog('voters')
@@ -369,6 +373,7 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 			menu(text: GlobalSettingsAndNotifier.singleton.messages.getString("importLabel")) {
 				menuItem(text: GlobalSettingsAndNotifier.singleton.messages.getString("importFromFileLabel"), actionPerformed: importVotersFromFile)
 				menuItem(text: GlobalSettingsAndNotifier.singleton.messages.getString("importFromDatabaseLabel"), actionPerformed: importVotersFromDatabase)
+                                menuItem(text: GlobalSettingsAndNotifier.singleton.messages.getString("importFromRegSysLabel"), actionPerformed: importVotersFromRegSys)
 			}
 			menuItem(text: GlobalSettingsAndNotifier.singleton.messages.getString("exportToFileLabel"), actionPerformed: exportVotersToFile)
 		}
