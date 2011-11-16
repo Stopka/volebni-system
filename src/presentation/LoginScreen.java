@@ -85,7 +85,7 @@ public class LoginScreen extends JFrame {
             //User a = Globals.getInstance().getUserOps().getUser(log);
             User a = new User(Role.ADMIN, log, pass);
             
-            if(a.getPassword().equals("900511") && a.getLogin().equals("Lahvi")){
+            if(a.getPassword().equals("123456") && a.getLogin().equals("Lahvi")){
                 this.dispose();
                 MainFrame.getMainFrame(a);
             } else {
