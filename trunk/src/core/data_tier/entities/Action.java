@@ -19,18 +19,11 @@ public class Action {
     private Calendar startDate, endDate;
     private String place;
     private String name;
-    
+    private int idNum;
     private List<Participant> participants;
     
-    public Action(Calendar startDate, Calendar endDate, String place, String name){
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.place = place;
-        this.name = name;
-        participants = new ArrayList<Participant>();
-    }
-    
-    public Action(Calendar startDate, Calendar endDate, String place, String name, String description){
+    public Action(int id, Calendar startDate, Calendar endDate, String place, String name, String description){
+        idNum = id;
         this.startDate = startDate;
         this.endDate = endDate;
         this.place = place;
@@ -67,10 +60,6 @@ public class Action {
         return startDate;
     }
     
-    public void setEndDCalendar(Calendar startDate){
-        this.startDate = startDate; 
-    }
-    
     public void setName(String name){
         this.name = name;
     }
@@ -79,5 +68,42 @@ public class Action {
         return this.name;
     }
     
+    public int getID(){
+        return idNum;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setEndDate(Calendar endDate) {
+        this.endDate = endDate;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
+    public void setStartDate(Calendar startDate) {
+        this.startDate = startDate;
+    }
     
+    
+    
+    @Override
+    public String toString(){
+        return "Akce ID: " + idNum + ". Název: " + name + ", Místo konání: " +
+                place + ". Koná se od: " + getDateString(startDate)+ " do: " +
+                getDateString(endDate) + ".";
+    }
+    
+    
+    private String getDateString(Calendar date){
+        int d = date.get(Calendar.DATE);
+        int m =date.get(Calendar.MONTH);
+        int r = date.get(Calendar.YEAR);
+        Formatter f = new Formatter();
+        f.format("%02d.%02d.%d", d, m, r);
+        return f.toString();
+    }
 }

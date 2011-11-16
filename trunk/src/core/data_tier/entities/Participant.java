@@ -4,39 +4,48 @@
  */
 package core.data_tier.entities;
 
-import businesstier.utils.Generator;
-import java.util.Calendar;
-
 /**
  * Třída user reprezentuje uživatele systému, při počáteční registraci
  * @author Lahvi
  */
 public class Participant {
-    
-    
-    
-    private static final int LEN = 8;
-    
+
     private String name;
     private String address;
     private String login;
     private String password;
     private int personalCardID;
+    private String email;
     private Presence presence;
     private boolean completeReg;
-   
+
     /**
      * 
      * @param name
      * @param address
      * @param personalCardID 
      */
-    public Participant(String name, String address, int personalCardID){
+    public Participant(String name, String email, int personalCardID) {
         this.name = name;
-        this.address = address;
+        this.email = email;
         this.personalCardID = personalCardID;
         completeReg = false;
         presence = new Presence();
+    }
+
+    public Participant(String name, String email, String address, int personalCardID) {
+        this.name = name;
+        this.email = email;
+        this.address = address;
+        this.personalCardID = personalCardID;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     /**
@@ -62,7 +71,7 @@ public class Participant {
     public int getpersonalCardID() {
         return personalCardID;
     }
-    
+
     /**
      * 
      * @param personalCardID 
@@ -86,6 +95,7 @@ public class Participant {
     public void setLogin(String login) {
         this.login = login;
     }
+
     /**
      * 
      * @return 
@@ -109,16 +119,16 @@ public class Participant {
     public String getPassword() {
         return password;
     }
-    
+
     /**
      * 
      * @param passwd 
      */
-    public void setPassword(String passwd){
+    public void setPassword(String passwd) {
         this.password = passwd;
     }
-    
-    public Presence getPresence(){
+
+    public Presence getPresence() {
         return presence;
     }
 
@@ -134,5 +144,12 @@ public class Participant {
      */
     public void setCompleteReg() {
         this.completeReg = true;
+    }
+    
+    @Override
+    public String toString(){
+        
+        return "Účastník " + name + ", č. OP: " +  personalCardID + ", Email: " 
+                + email + (login != null ? ", Login: " + login : "");    
     }
 }
