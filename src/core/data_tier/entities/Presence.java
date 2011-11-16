@@ -76,4 +76,11 @@ public class Presence {
     public void addArrival(Calendar arrTime){
         arrivals.add(arrTime);
     }
+    
+   
+    
+    @Override
+    public String toString(){
+        return "Účastník " + (presence ? "je " : "není ") + "přítomen"; 
+    }
 }

@@ -19,7 +19,7 @@ public class Generator {
      */
     public static final int LENGTH = 8;
     
-    private static Random rnd = new Random();
+    static Random rnd = new Random();
 
     /**
      * Vygeneruje náhodný řetězec znaků ({@link String}), který bude mít délku
@@ -44,9 +44,7 @@ public class Generator {
      * @return Vygnerovaný řetězec.
      */
     public static String randomString() {
-        if(Generator.LENGTH > 0 && Generator.LENGTH < 1000){
-            return null;
-        }
+        
         StringBuilder sb = new StringBuilder(Generator.LENGTH);
     
         for (int i = 0; i < Generator.LENGTH; i++) {
