@@ -11,7 +11,6 @@ USE `mydb` ;
 CREATE  TABLE IF NOT EXISTS `mydb`.`Admin` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `password` VARCHAR(45) NOT NULL ,
-  `isAdmin` TINYINT(1)  NOT NULL ,
   `isSuperAdmin` TINYINT(1)  NOT NULL ,
   `login` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`id`) ,
@@ -24,9 +23,6 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `mydb`.`User` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
-  `street` VARCHAR(45) NOT NULL ,
-  `number` VARCHAR(45) NOT NULL COMMENT 'číslo popisné' ,
-  `city` VARCHAR(45) NOT NULL ,
   `IDCard` INT NOT NULL ,
   `name` VARCHAR(45) NOT NULL ,
   `surname` VARCHAR(45) NOT NULL ,
@@ -91,9 +87,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Additional`
+-- Table `mydb`.`Additional_info`
 -- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `mydb`.`Additional` (
+CREATE  TABLE IF NOT EXISTS `mydb`.`Additional_info` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `key` VARCHAR(45) NOT NULL ,
   `value` TEXT NULL ,
@@ -108,7 +104,30 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Additional` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `mydb`.`Admin_manages_Action`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `mydb`.`Admin_manages_Action` (
+  `Admin_id` BIGINT NOT NULL ,
+  `Action_id` BIGINT NOT NULL ,
+  PRIMARY KEY (`Admin_id`, `Action_id`) ,
+  INDEX `fk_Admin_has_Action_Action1` (`Action_id` ASC) ,
+  INDEX `fk_Admin_has_Action_Admin1` (`Admin_id` ASC) ,
+  CONSTRAINT `fk_Admin_has_Action_Admin1`
+    FOREIGN KEY (`Admin_id` )
+    REFERENCES `mydb`.`Admin` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Admin_has_Action_Action1`
+    FOREIGN KEY (`Action_id` )
+    REFERENCES `mydb`.`Action` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
