@@ -2,12 +2,14 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
+CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 COLLATE utf8_czech_ci ;
 USE `mydb` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`Admin`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Admin` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`Admin` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `password` VARCHAR(45) NOT NULL ,
@@ -21,13 +23,16 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`User`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`User` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`User` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `IDCard` INT NOT NULL ,
   `name` VARCHAR(45) NOT NULL ,
   `surname` VARCHAR(45) NOT NULL ,
-  `login` VARCHAR(45)NULL ,
-  `password` VARCHAR(45)NULL ,
+  `login` VARCHAR(45) NOT NULL ,
+  `password` VARCHAR(45) NOT NULL ,
+  `email` VARCHAR(128) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
@@ -35,6 +40,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`Action`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Action` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`Action` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `start` DATETIME NOT NULL ,
@@ -50,6 +57,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`Participation`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Participation` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`Participation` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `Action_id` BIGINT NOT NULL ,
@@ -73,6 +82,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`Presence`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Presence` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`Presence` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `checkin` DATETIME NOT NULL ,
@@ -91,6 +102,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`Additional_info`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Additional_info` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`Additional_info` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `key` VARCHAR(45) NOT NULL ,
@@ -109,6 +122,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`Admin_manages_Action`
 -- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Admin_manages_Action` ;
+
 CREATE  TABLE IF NOT EXISTS `mydb`.`Admin_manages_Action` (
   `Admin_id` BIGINT NOT NULL ,
   `Action_id` BIGINT NOT NULL ,
