@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="windows-1252"?>
 <!DOCTYPE XMI SYSTEM "UML_EA.dtd">
-<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2011-10-30 23:01:52">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2011-12-06 11:28:01">
 	<XMI.header>
 		<XMI.documentation>
 			<XMI.exporter>Enterprise Architect</XMI.exporter>
@@ -174,6 +174,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="315"/>
 										<UML:TaggedValue tag="ea_targetID" value="344"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=19;SY=-23;EX=-1;EY=-3;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -211,6 +212,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="315"/>
 										<UML:TaggedValue tag="ea_targetID" value="317"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -264,6 +266,7 @@
 										<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 										<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 										<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=3;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Generalization>
@@ -301,6 +304,7 @@
 										<UML:TaggedValue tag="dst_isNavigable" value="true"/>
 										<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
 										<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=3;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 								</UML:Generalization>
@@ -322,6 +326,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="315"/>
 										<UML:TaggedValue tag="ea_targetID" value="322"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -359,6 +364,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="315"/>
 										<UML:TaggedValue tag="ea_targetID" value="323"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=19;SY=-8;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -396,6 +402,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="315"/>
 										<UML:TaggedValue tag="ea_targetID" value="328"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=19;SY=-14;EX=1;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -433,6 +440,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="315"/>
 										<UML:TaggedValue tag="ea_targetID" value="325"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -493,6 +501,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="340"/>
 										<UML:TaggedValue tag="ea_targetID" value="319"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=2;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -530,6 +539,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="340"/>
 										<UML:TaggedValue tag="ea_targetID" value="326"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -567,6 +577,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="340"/>
 										<UML:TaggedValue tag="ea_targetID" value="320"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -627,6 +638,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="339"/>
 										<UML:TaggedValue tag="ea_targetID" value="342"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -664,6 +676,7 @@
 										<UML:TaggedValue tag="ea_targetType" value="UseCase"/>
 										<UML:TaggedValue tag="ea_sourceID" value="339"/>
 										<UML:TaggedValue tag="ea_targetID" value="341"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=0;EY=0;EDGE=2;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Association.connection>
@@ -764,6 +777,7 @@
 										<UML:TaggedValue tag="ea_sourceID" value="316"/>
 										<UML:TaggedValue tag="ea_targetID" value="323"/>
 										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={BE0706DB-3C0C-4553-B834-8A020532F872}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=extend;@ENDSTEREO;$DES;$CLT={D992C201-18D4-49e3-A7D8-F3604C2384E7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=-51;SY=5;EX=0;EY=0;EDGE=4;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 										<UML:TaggedValue tag="mb" value=" &#xA;«extend»"/>
 									</UML:ModelElement.taggedValue>
@@ -913,6 +927,7 @@
 										<UML:TaggedValue tag="ea_sourceID" value="318"/>
 										<UML:TaggedValue tag="ea_targetID" value="323"/>
 										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={2225FCD9-9403-4318-85C6-60685D68E383}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=extend;@ENDSTEREO;$DES;$CLT={3E49EDE0-AADB-4bd5-B5FC-CA13DC19D887}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=52;EY=-10;EDGE=4;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 										<UML:TaggedValue tag="mb" value=" &#xA;«extend»"/>
 									</UML:ModelElement.taggedValue>
@@ -1148,6 +1163,7 @@
 										<UML:TaggedValue tag="ea_sourceID" value="321"/>
 										<UML:TaggedValue tag="ea_targetID" value="323"/>
 										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={430D5B23-7BC8-4df4-BCA0-64BDE8346A15}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=extend;GUID={DEE3D2F4-2C33-41fa-99DB-B1D88E2D1BA9};@ENDSTEREO;$DES;$CLT={1FBB248E-ACCB-4fcb-988A-10D9F515595F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=-52;SY=-17;EX=33;EY=35;EDGE=4;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 										<UML:TaggedValue tag="mb" value=" &#xA;«extend»"/>
 									</UML:ModelElement.taggedValue>
@@ -1297,6 +1313,7 @@
 										<UML:TaggedValue tag="ea_sourceID" value="343"/>
 										<UML:TaggedValue tag="ea_targetID" value="323"/>
 										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B03E9E6E-8785-483a-8E48-D81A77A235BB}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=extend;GUID={DEE3D2F4-2C33-41fa-99DB-B1D88E2D1BA9};@ENDSTEREO;$DES;$CLT={9DC7A9AD-794C-48d7-987F-76F555F9DB02}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+										<UML:TaggedValue tag="privatedata5" value="SX=0;SY=0;EX=52;EY=-24;EDGE=1;"/>
 										<UML:TaggedValue tag="virtualInheritance" value="0"/>
 										<UML:TaggedValue tag="mb" value=" &#xA;«extend»"/>
 									</UML:ModelElement.taggedValue>
