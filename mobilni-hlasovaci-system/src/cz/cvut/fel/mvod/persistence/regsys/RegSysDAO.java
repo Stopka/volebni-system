@@ -2,8 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package cz.cvut.fel.mvod.persistence;
+package cz.cvut.fel.mvod.persistence.regsys;
 
+import cz.cvut.fel.mvod.persistence.DAOException;
 import java.util.ArrayList;
 
 /**
@@ -24,4 +25,7 @@ public interface RegSysDAO {
 	 * @throws DAOException pokud operace selže
 	 */
 	ArrayList<RegSysAction> getAkce() throws DAOException;
+        
+        /* testovaci metoda */
+        String getDBVersion();
 }

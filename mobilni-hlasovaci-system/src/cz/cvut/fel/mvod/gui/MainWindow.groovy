@@ -117,8 +117,10 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 	 * JDialog pro vytvoření nového hlasování.
 	 */
 	def newVotingDialog 
+        def newRegSysDialog
 	def dao = DAOFacadeImpl.instance
 	def voterDAO = DAOFactoryImpl.instance.voterDAO
+        def regSysDAO = DAOFactoryImpl.instance.regSysDAO
 	def questionResultPanel = new QuestionResultPanel(builder)
 
 	/**
@@ -305,7 +307,8 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 	}
         
         def importVotersFromRegSys = {
-		importRegSysDialog()
+		//importRegSysDialog()
+                newRegSysDialog.show()
 	}
 
 	def importVotersFromFile = {
@@ -456,6 +459,7 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 				}
 			}
 		newVotingDialog = new NewVotingDialog(builder, mainWindow)
+                newRegSysDialog = new NewRegSysDialog(builder, mainWindow)
 	}
 
 	/**

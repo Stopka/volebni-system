@@ -1,4 +1,4 @@
-package cz.cvut.fel.mvod.persistence;
+package cz.cvut.fel.mvod.persistence.regsys;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -6,6 +6,7 @@ import java.util.List;
 
 public class RegSysAction {
     
+    private int id;
     private String description;
     private Calendar startDate, endDate;
     private String place;
@@ -13,7 +14,8 @@ public class RegSysAction {
     
     private List<RegSysParticipant> participants;
     
-    public RegSysAction(Calendar startDate, Calendar endDate, String place, String name){
+    public RegSysAction(int id, Calendar startDate, Calendar endDate, String place, String name){
+        this.id = id;
         this.startDate = startDate;
         this.endDate = endDate;
         this.place = place;
@@ -28,6 +30,11 @@ public class RegSysAction {
         this.name = name;
         this.description = description;
         participants = new ArrayList<RegSysParticipant>();
+    }
+    
+    public RegSysAction(int id, String name){
+        this.id = id;
+        this.name = name;
     }
     
     public void addUser(RegSysParticipant user){
@@ -69,6 +76,23 @@ public class RegSysAction {
     public String getName(){
         return this.name;
     }
-    
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+    @Override
+    public String toString() {
+        return name;
+    }
     
 }
