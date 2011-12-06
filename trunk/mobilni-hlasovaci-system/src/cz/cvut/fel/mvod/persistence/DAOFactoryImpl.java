@@ -26,6 +26,8 @@
 package cz.cvut.fel.mvod.persistence;
 
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactoryImpl;
+import cz.cvut.fel.mvod.persistence.regsys.RegSysDAO;
+import cz.cvut.fel.mvod.persistence.regsys.RegSysDAOImpl;
 
 /**
  *
@@ -38,12 +40,14 @@ public class DAOFactoryImpl implements DAOFactory {
 	private final VoterDAO voterDAO;
 	private final VotingDAO votingDAO;
 	private final VoteDAO voteDAO;
+        private final RegSysDAO regSysDAO;
 
 	private DAOFactoryImpl() throws DAOException {
 		new DerbyDAOFactoryImpl().connect();
 		voterDAO = new VoterDAOImpl();
 		votingDAO = new VotingDAOImpl();
 		voteDAO = new VoteDAOImpl();
+                regSysDAO = new RegSysDAOImpl();
 	}
 
 	public static void initInstance() throws DAOException {
@@ -69,6 +73,10 @@ public class DAOFactoryImpl implements DAOFactory {
 
 	public VoteDAO getVoteDAO() {
 		return voteDAO;
+	}
+        
+        public RegSysDAO getRegSysDAO() {
+		return regSysDAO;
 	}
 
 

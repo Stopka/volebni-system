@@ -25,6 +25,8 @@
 
 package cz.cvut.fel.mvod.persistence;
 
+import cz.cvut.fel.mvod.persistence.regsys.RegSysDAO;
+
 /**
  * Tovární třída vytvářející jednotlivé DAO objekty.
  * @author jakub
@@ -34,5 +36,6 @@ public interface DAOFactory {
 	VoterDAO getVoterDAO();
 	VotingDAO getVotingDAO();
 	VoteDAO getVoteDAO();
+        RegSysDAO getRegSysDAO();
 
 }

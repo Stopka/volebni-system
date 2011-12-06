@@ -25,12 +25,15 @@
 
 package cz.cvut.fel.mvod.persistence;
 
+import cz.cvut.fel.mvod.persistence.regsys.RegSysAction;
+import cz.cvut.fel.mvod.persistence.regsys.RegSysParticipant;
 import cz.cvut.fel.mvod.common.Question;
 import cz.cvut.fel.mvod.common.Vote;
 import cz.cvut.fel.mvod.common.Voter;
 import cz.cvut.fel.mvod.common.Voting;
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactory;
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactoryImpl;
+import cz.cvut.fel.mvod.persistence.regsys.RegSysDAO;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +48,7 @@ public class DAOFacadeImpl implements DAOFacade {
 	private final VotingDAO votings;
 	private final VoterDAO voters;
 	private final VoteDAO votes;
+        private final RegSysDAO regSys;
 	private final QuestionDAO questionsDB;
 	private final VotingDAO votingsDB;
 	private final VoterDAO votersDB;
@@ -55,11 +59,13 @@ public class DAOFacadeImpl implements DAOFacade {
 		votings = DAOFactoryImpl.getInstance().getVotingDAO();
 		voters = DAOFactoryImpl.getInstance().getVoterDAO();
 		votes = DAOFactoryImpl.getInstance().getVoteDAO();
+                regSys = DAOFactoryImpl.getInstance().getRegSysDAO();
 		DerbyDAOFactory factory = new DerbyDAOFactoryImpl();
 		questionsDB = factory.getQuestionDAO();
 		votingsDB = factory.getVotingDAO();
 		votersDB = factory.getVoterDAO();
 		votesDB = factory.geVoteDAO();
+                
 	}
 
 	public static synchronized void initInstance() throws DAOException {
@@ -165,9 +171,13 @@ public class DAOFacadeImpl implements DAOFacade {
 	}
         
         @Override
-	public void retrieveVotersFromRegSys(List<RegSysParticipant> participant_list, RegSysAction akce) throws DAOException {
-		synchronized(votersDB) {
-			// TODO
+	public void retrieveVotersFromRegSys(RegSysAction action) throws DAOException {
+		synchronized(regSys) {
+                    //RegSysAction a = (RegSysAction) action;
+                    System.out.println("Called with id:"+action.getId());
+                    for(int i = 0; i < 10; i++) {
+                        voters.saveVoter(new Voter("Pepa", "Kobza", new String("jeb").getBytes(), "pepakobza"+i));
+                    }
 		}
 	}
 
