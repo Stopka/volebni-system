@@ -5,6 +5,8 @@
 package cz.cvut.fel.mvod.persistence.regsys;
 
 import cz.cvut.fel.mvod.persistence.DAOException;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Action;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Participant;
 import java.util.ArrayList;
 
 /**
@@ -18,14 +20,12 @@ public interface RegSysDAO {
 	 * @return ArrayList<RegSysUcastnik>
 	 * @throws DAOException pokud operace selže
 	 */
-	ArrayList<RegSysParticipant> getParticipant(int id_participant, int id_akce) throws DAOException;
+	ArrayList<Participant> getParticipants() throws DAOException;
         /**
 	 * Vrati vsechny akce
 	 * @return ArrayList<RegSysAkce>
 	 * @throws DAOException pokud operace selže
 	 */
-	ArrayList<RegSysAction> getAkce() throws DAOException;
+	ArrayList<Action> getAkce() throws DAOException;
         
-        /* testovaci metoda */
-        String getDBVersion();
 }

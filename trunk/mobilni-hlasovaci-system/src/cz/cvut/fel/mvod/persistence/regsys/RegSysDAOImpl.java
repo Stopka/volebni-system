@@ -5,9 +5,13 @@
 package cz.cvut.fel.mvod.persistence.regsys;
 
 import cz.cvut.fel.mvod.persistence.DAOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.ActionDAO;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.ParticipantDAO;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.SystemRegException;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Action;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Participant;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,28 +21,80 @@ import java.util.logging.Logger;
  */
 public class RegSysDAOImpl implements RegSysDAO {
     
-    Database db;
+    ParticipantDAO pDao;
+    ActionDAO aDao;
+    
+    private boolean importEnabled = false;
+    private Action action; 
     
     public RegSysDAOImpl() {
-        db = new Database();
+        pDao = ParticipantDAO.getInstance();
+        aDao = ActionDAO.getInstance();
     }
     @Override
-    public ArrayList<RegSysParticipant> getParticipant(int id_participant, int id_akce) throws DAOException {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public ArrayList<Participant> getParticipants() throws DAOException {
+        ArrayList<Participant> al = new ArrayList();
+        Collection c = null;
+        try {
+            c = pDao.getPresent(action.getID());
+        } catch (SystemRegException ex) {
+            System.out.println("Chyba!");
+            throw new DAOException("Vyskytla se chyba při komunikaci s registračním serverem\nZkontrolujte připojení k serveru");
+        }
+        if(c != null) {
+            al = new ArrayList(c);
+        } else {
+            System.out.println("c je null");
+        }
+        return al;
     }
 
     @Override
-    public ArrayList<RegSysAction> getAkce() throws DAOException {
-        ArrayList<RegSysAction> al = db.getAkce();
-        System.out.println("LIST: l="+al.size());
-        System.out.println("first: id="+al.get(0).getId()+" name="+al.get(0).getName());
-        return al;
+    public ArrayList<Action> getAkce() throws DAOException {
+        ArrayList<Action> al = new ArrayList();
+        try {
+            al = new ArrayList(aDao.getActions());
+            //System.out.println("LIST: l="+al.size());
+            if(al.size() == 0) {
+                throw new DAOException("Na registračním serveru nebyla nalezena žádná akce.");
+            }
+            return al;
+        } catch (SystemRegException ex) {
+            throw new DAOException("Vyskytla se chyba při komunikaci s registračním serverem\nZkontrolujte připojení k serveru");
+        }
+        
+        //System.out.println("first: id="+al.get(0).getId()+" name="+al.get(0).getName());
+        //return null;
         
     }
 
-    @Override
-    public String getDBVersion() {
-        return db.getVersion();
+    /**
+     * @return the isEnabled
+     */
+    public boolean isImportEnabled() {
+        return importEnabled;
+    }
+
+    /**
+     * @param isEnabled the isEnabled to set
+     */
+    public void setImportEnabled(boolean isEnabled) {
+        this.importEnabled = isEnabled;
+    }
+
+    /**
+     * @return the actionId
+     */
+    public Action getAction() {
+        return action;
+    }
+
+    /**
+     * @param actionId the actionId to set
+     */
+    public void setAction(Action action) {
+        this.action = action;
+        
     }
     
 }

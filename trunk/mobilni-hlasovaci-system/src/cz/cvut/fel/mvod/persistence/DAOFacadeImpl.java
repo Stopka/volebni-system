@@ -25,17 +25,18 @@
 
 package cz.cvut.fel.mvod.persistence;
 
-import cz.cvut.fel.mvod.persistence.regsys.RegSysAction;
-import cz.cvut.fel.mvod.persistence.regsys.RegSysParticipant;
 import cz.cvut.fel.mvod.common.Question;
 import cz.cvut.fel.mvod.common.Vote;
 import cz.cvut.fel.mvod.common.Voter;
 import cz.cvut.fel.mvod.common.Voting;
+import cz.cvut.fel.mvod.crypto.CryptoUtils;
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactory;
 import cz.cvut.fel.mvod.persistence.derby.DerbyDAOFactoryImpl;
 import cz.cvut.fel.mvod.persistence.regsys.RegSysDAO;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Action;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Participant;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Iterator;
 
 /**
  *
@@ -171,13 +172,30 @@ public class DAOFacadeImpl implements DAOFacade {
 	}
         
         @Override
-	public void retrieveVotersFromRegSys(RegSysAction action) throws DAOException {
+	public void retrieveVotersFromRegSys() throws DAOException {
 		synchronized(regSys) {
-                    //RegSysAction a = (RegSysAction) action;
-                    System.out.println("Called with id:"+action.getId());
-                    for(int i = 0; i < 10; i++) {
-                        voters.saveVoter(new Voter("Pepa", "Kobza", new String("jeb").getBytes(), "pepakobza"+i));
+                    
+                    
+                    ArrayList<Participant> al = regSys.getParticipants();
+                    System.out.println("I got "+al.size()+" participants");
+                    Iterator it = al.iterator();
+                    
+                    // wipe voters
+                    ArrayList<Voter> al2 = new ArrayList(voters.retrieveVoters());
+                    Iterator<Voter> it2 = al2.iterator();
+                    while(it2.hasNext()) {
+                        voters.deleteVoter(it2.next());
                     }
+                    
+                    while(it.hasNext()) {
+                        Participant p = (Participant) it.next();
+                        voters.saveVoter(new Voter(p.getFirstName(),p.getLastName(),CryptoUtils.passwordDigest(p.getPassword(), p.getLogin()),p.getLogin()));
+                    }
+                    //RegSysAction a = (RegSysAction) action;
+//                    System.out.println("Called with id:"+action.getId());
+//                    for(int i = 0; i < 10; i++) {
+//                        voters.saveVoter(new Voter("Pepa", "Kobza", new String("jeb").getBytes(), "pepakobza"+i));
+//                    }
 		}
 	}
 

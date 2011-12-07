@@ -1,0 +1,6 @@
+Vytvořen logger pro DriverManager...DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb")
+    trying sun.jdbc.odbc.JdbcOdbcDriver
+*Driver.connect (jdbc:mysql://localhost:3306/mydb)
+    trying org.apache.derby.jdbc.AutoloadedDriver
+    trying com.mysql.jdbc.Driver
+getConnection returning com.mysql.jdbc.Driver

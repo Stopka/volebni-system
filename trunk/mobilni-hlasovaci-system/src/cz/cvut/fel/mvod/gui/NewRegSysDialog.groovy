@@ -51,7 +51,7 @@ import cz.cvut.fel.mvod.common.EvaluationType
 import cz.cvut.fel.mvod.persistence.DAOFacadeImpl
 import cz.cvut.fel.mvod.global.GlobalSettingsAndNotifier
 import cz.cvut.fel.mvod.persistence.DAOFactoryImpl
-import cz.cvut.fel.mvod.persistence.regsys.RegSysAction
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Action
 
 
 /**
@@ -77,6 +77,7 @@ class NewRegSysDialog implements Showable {
 	 * JComboBox pro výběr akce.
 	 */
 	def eventComboBox
+        def eventCheckBox
 	/**
 	 * JPanel zobrazující nastavení hlasování.
 	 */
@@ -119,9 +120,17 @@ class NewRegSysDialog implements Showable {
 	/**
 	 * Vytvoří a uloží nové hlasování.
 	 */
-	def createAction = {
+	def confirmImport = {
                 System.out.println(eventComboBox.selectedIndex)
-                DAOFacadeImpl.instance.retrieveVotersFromRegSys(eventComboBox.selectedItem)
+                if(eventCheckBox.selected) {
+                    System.out.println("Ano");
+                    regSysDAO.setImportEnabled(true)
+                } else {
+                    regSysDAO.setImportEnabled(false)
+                    System.out.println("Ne");
+                }
+                regSysDAO.setAction(eventComboBox.selectedItem)
+                //DAOFacadeImpl.instance.retrieveVotersFromRegSys(eventComboBox.selectedItem)
 //		def voting = new Voting()
 //		voting.test = votingType.selectedItem == TYPES[1]
 //		if(!voting.test) {
@@ -141,7 +150,7 @@ class NewRegSysDialog implements Showable {
 //			}
 //		}
 //		DAOFacadeImpl.instance.currentVoting = voting
-//		hide()
+		hide()
 	}
 
 	/**
@@ -157,13 +166,19 @@ class NewRegSysDialog implements Showable {
 			locationRelativeTo: owner,
 			defaultCloseOperation: WindowConstants.DISPOSE_ON_CLOSE) {
 		panel(constraints: BorderLayout.NORTH,
-				layout: new GridLayout(1, 2)) {
+				layout: new FlowLayout()) {
 			label(text: "Zvolte akci:")
 			eventComboBox = comboBox(
                             model: new DefaultComboBoxModel(regSysDAO.getAkce().toArray()),
 				selectedIndex: 0)
 		}
-		panel(constraints: BorderLayout.CENTER) {
+                panel(constraints: BorderLayout.CENTER,
+				layout: new FlowLayout()) {
+			eventCheckBox = checkBox(selected: regSysDAO.isImportEnabled())
+                            label(text: "Načítat účastníky z registračního systému")
+		}
+
+		panel(constraints: BorderLayout.SOUTH) {
 			votingSettingsPanel = panel(layout: new GridLayout(2, 2)) {
 				
 			}
@@ -187,7 +202,7 @@ class NewRegSysDialog implements Showable {
 			}
 		}
 		panel(constraints: BorderLayout.SOUTH, layout: new FlowLayout(FlowLayout.RIGHT)) {
-			button(text: "Importovat", actionPerformed: createAction)
+			button(text: "OK", actionPerformed: confirmImport)
 			button(text: GlobalSettingsAndNotifier.singleton.messages.getString("cancelLabel"), actionPerformed: {hide()})
 		}
 	}

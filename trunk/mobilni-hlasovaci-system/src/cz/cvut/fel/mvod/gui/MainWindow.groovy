@@ -165,15 +165,30 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 			return
 		}
 		def questions = votingTableModel.getSelected()
-		def voters = voterDAO.retrieveVoters()
+		//def voters = voterDAO.retrieveVoters()
 		if(questions.size() == 0) {
 			showError(GlobalSettingsAndNotifier.singleton.messages.getString("noQuestSelErr"))
 			return
 		}
+                
+                def importEnabled = regSysDAO.isImportEnabled()
+                if(importEnabled) {
+                    if(JOptionPane.YES_OPTION == JOptionPane.showConfirmDialog(mainWindow,
+                                    "Import z registračního systému je aktivní\nSystém nyní načte voliče z registračního systému", "info",
+                                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE)) {
+                            DAOFacadeImpl.instance.retrieveVotersFromRegSys()
+                            
+                    } else {
+                            return
+                    }
+                }
+                def voters = voterDAO.retrieveVoters()
 		if(voters.size() == 0) {
 			showError(GlobalSettingsAndNotifier.singleton.messages.getString("noPPLSelErr"))
 			return
 		}
+                
+                
 		def network = NetworkAccessManager.getInstance()
 		try {
 			network.startServer()
@@ -181,6 +196,8 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 			new ErrorDialog(null, true, GlobalSettingsAndNotifier.singleton.messages.getString("databaseInitFail")+"\n Voting system m\n"+ex.toString()).setVisible(true)
 			return
 		}
+              
+        
 		questions.each({it.state = Question.State.RUNNING})
 		dao.notifyVotingChanged();
 		network.sendData(voters, questions, true)
@@ -308,7 +325,13 @@ class MainWindow implements ListSelectionListener, DAOObserver {
         
         def importVotersFromRegSys = {
 		//importRegSysDialog()
-                newRegSysDialog.show()
+                try {
+                    newRegSysDialog = new NewRegSysDialog(builder, mainWindow)
+                    newRegSysDialog.show()
+                } catch(DAOException ex) {
+			showError(ex.getMessage())
+			return
+		}
 	}
 
 	def importVotersFromFile = {
@@ -459,7 +482,7 @@ class MainWindow implements ListSelectionListener, DAOObserver {
 				}
 			}
 		newVotingDialog = new NewVotingDialog(builder, mainWindow)
-                newRegSysDialog = new NewRegSysDialog(builder, mainWindow)
+                //newRegSysDialog = new NewRegSysDialog(builder, mainWindow)
 	}
 
 	/**
