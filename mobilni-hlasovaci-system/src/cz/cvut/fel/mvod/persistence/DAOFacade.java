@@ -26,13 +26,11 @@
 
 package cz.cvut.fel.mvod.persistence;
 
-import cz.cvut.fel.mvod.persistence.regsys.RegSysAction;
-import cz.cvut.fel.mvod.persistence.regsys.RegSysParticipant;
 import cz.cvut.fel.mvod.common.Question;
 import cz.cvut.fel.mvod.common.Vote;
 import cz.cvut.fel.mvod.common.Voter;
 import cz.cvut.fel.mvod.common.Voting;
-import java.util.List;
+import cz.cvut.fel.mvod.persistence.regsys.commonInterface.entities.Action;
 
 /**
  * Poskytuje rozhraní pro jednodušší provádění nejčastějších operací.
@@ -91,5 +89,5 @@ public interface DAOFacade {
 	 * Načte voliče z registračního systému a uloží
 	 * @throws DAOException pokud operace selže
 	 */
-	void retrieveVotersFromRegSys(RegSysAction action) throws DAOException;
+	void retrieveVotersFromRegSys() throws DAOException;
 }
