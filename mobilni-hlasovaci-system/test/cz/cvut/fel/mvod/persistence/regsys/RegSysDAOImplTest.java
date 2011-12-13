@@ -49,6 +49,7 @@ public class RegSysDAOImplTest {
         System.out.println("getParticipants");
         RegSysDAOImpl instance = new RegSysDAOImpl();
         ArrayList result = instance.getParticipants();
+        assertNotNull(result);
     }
 
     /**
