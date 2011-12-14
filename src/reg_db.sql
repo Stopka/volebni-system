@@ -31,8 +31,8 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`User` (
   `name` VARCHAR(45) NOT NULL ,
   `surname` VARCHAR(45) NOT NULL ,
   `login` VARCHAR(45) NOT NULL ,
-  `email` VARCHAR(128) NOT NULL ,
   `password` VARCHAR(45) NOT NULL ,
+  `email` VARCHAR(128) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
