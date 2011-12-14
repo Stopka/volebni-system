@@ -226,8 +226,8 @@ CREATE TABLE IF NOT EXISTS `User` (
   `name` varchar(45) COLLATE utf8_czech_ci NOT NULL,
   `surname` varchar(45) COLLATE utf8_czech_ci NOT NULL,
   `login` varchar(45) COLLATE utf8_czech_ci NOT NULL,
-  `email` varchar(128) COLLATE utf8_czech_ci NOT NULL,
   `password` varchar(45) COLLATE utf8_czech_ci NOT NULL,
+  `email` varchar(128) COLLATE utf8_czech_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci AUTO_INCREMENT=53 ;
 
