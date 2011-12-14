@@ -32,6 +32,7 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`User` (
   `surname` VARCHAR(45) NOT NULL ,
   `login` VARCHAR(45) NOT NULL ,
   `email` VARCHAR(128) NOT NULL ,
+  `password` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
 
@@ -62,7 +63,6 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`Participation` (
   `id` BIGINT NOT NULL AUTO_INCREMENT ,
   `Action_id` BIGINT NOT NULL ,
   `User_id` BIGINT NOT NULL ,
-  `password` VARCHAR(45) NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `fk_Participation_Action1` (`Action_id` ASC) ,
   INDEX `fk_Participation_User1` (`User_id` ASC) ,
