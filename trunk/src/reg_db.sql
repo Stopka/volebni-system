@@ -30,8 +30,8 @@ CREATE  TABLE IF NOT EXISTS `mydb`.`User` (
   `IDCard` INT NOT NULL ,
   `name` VARCHAR(45) NOT NULL ,
   `surname` VARCHAR(45) NOT NULL ,
-  `login` VARCHAR(45) NOT NULL ,
-  `password` VARCHAR(45) NOT NULL ,
+  `login` VARCHAR(45) NULL ,
+  `password` VARCHAR(45) NULL ,
   `email` VARCHAR(128) NOT NULL ,
   PRIMARY KEY (`id`) )
 ENGINE = InnoDB;
