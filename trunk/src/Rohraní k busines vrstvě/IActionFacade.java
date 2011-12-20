@@ -26,21 +26,21 @@ public interface IActionFacade {
      * @param endDate Datum ukončení akce.
      * @return Vytvořená akce.
      */
-    Action createAction(String name, String place, String desc, Calendar startDate, Calendar endDate);
+    Action createAction(String name, String place, String desc, Calendar startDate, Calendar endDate) throws SystemRegException;
     /**
      * Vrací všechny vytvořené akce. Nevím jestli je eště někde potřeba. Pravděpodobně 
      * nahrazeno {@link IActionFacade#getActions(java.util.Collection)}, kdy se vrací
      * pouze ty akce, na které má daný uživatel/účastník právo.
      * @return Kolekce všech akcí.
      */
-    Collection<Action> getActions();
+    Collection<Action> getActions() throws SystemRegException;
     /**
      * Vrací všechny akce, na které má daný uživatel/účastník právo. Metoda dané
      * akce vyhledá podle jejich IDček získaných z parametru {@code actionIDs}.
      * @param actionIDs Kolekce IDček vyhledávaných akcí.
      * @return Vrací kolekci s vyhledánými akcemi.
      */
-    Collection<Action> getActions(Collection<Long> actionIDs);
+    Collection<Action> getActions(Collection<Long> actionIDs) throws SystemRegException;
     /**
      * Změní k akci s daným ID dta zahájení a ukončení.
      * @param ID ID vyhledáváné akce.

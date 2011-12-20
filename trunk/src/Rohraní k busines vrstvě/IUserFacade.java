@@ -23,7 +23,7 @@ public interface IUserFacade {
      * @param actionIDs Kolekce akcí, které bude mít uživatel právo ovlivňovat.
      * @return Vytvořený uživatel.
      */
-    User createUser(String login, String password, Role role, Collection<Long> actionIDs);
+    User createUser(String login, String password, Role role, Collection<Long> actionIDs) throws SystemRegException;
     /**
      * Vrací uživatle s daným loginem.
      * @param login Login podle, kterého se účastník vyhledá.
@@ -66,7 +66,7 @@ public interface IUserFacade {
      * Vrací všechny uživatele.
      * @return 
      */
-    Collection<User> getUsers();
+    Collection<User> getUsers() throws SystemRegException;
     /**
      * Vrací kolekci akcí, na které má uživatel práve sahat.
      * @param login Login vyhledávané uživatele.
@@ -81,7 +81,7 @@ public interface IUserFacade {
      * @param role Role přihlášeného uživatele.
      * @return Kolekce nižších rolí.
      */
-    Collection<User> getUsers(Role role);
+    Collection<User> getUsers(Role role) throws SystemRegException;
     /**
      * Odstraní uživateli s daným loginem akci danou parametrem {@code removeID}.
      * @param login Login vyhledávaného uživatele.
@@ -97,4 +97,6 @@ public interface IUserFacade {
      * @throws SystemRegException 
      */
     void addActions(String login, Collection<Long> actionIDs) throws SystemRegException;
+    
+    void addAction(String login, long actionID) throws SystemRegException;
 }

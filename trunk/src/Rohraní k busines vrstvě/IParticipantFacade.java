@@ -26,7 +26,7 @@ public interface IParticipantFacade {
      * @param actionIDs Kolekce přiřazených akcí.
      * @param adInfo Nepoviné parametry. Může být {@code null}.
      */
-    void createParticipant(String fName, String lName, String email, long personalID, Collection<Long> actionIDs, Additional adInfo);
+    void createParticipant(String fName, String lName, String email, long personalID, Collection<Long> actionIDs, Additional adInfo) throws SystemRegException;
     /**
      * Vrací účastníka vyhledaného podle jeho ID získaného z parametru {@code id}.
      * @param id ID vyhledávaného účastníka.
@@ -49,6 +49,7 @@ public interface IParticipantFacade {
      * @throws SystemRegException Vyvolá vyjímku pokud neexistuje účastník s daným ID.
      */
     void deleteParticipant(long id) throws SystemRegException;
+    
     /**
      * Změní přítomnost účastníkovi s daným ID {@code id} na akci s ID {@code actionID}.
      * Pokud byl doposud účastník přítomen zaznamená se odchod a naopak.
@@ -63,31 +64,31 @@ public interface IParticipantFacade {
      * @param actionID ID dané akce, pro kterou chceme vyhledat účastníky.
      * @return Kolekce najitých účastníků.
      */
-    Collection<Participant> getAllParticipants(long actionID);
+    Collection<Participant> getAllParticipants(long actionID) throws SystemRegException;
     /**
      * Vrátí všechny účasníka, kteří jsou zrovna na dané akaci přítomni.
      * @param actionID ID akce, pro kterou chceme vyhledat účastníky.
      * @return Kolekce vyhledaných účastníků.
      */
-    Collection<Participant> getPresent(long actionID);
+    Collection<Participant> getPresent(long actionID) throws SystemRegException;
     /**
      * Vrátí všechny účastníky, kteří na dané akci zrovna nejsou přítomni.
      * @param actionID ID akce, pro kterou chceme vyhledat účastníky.
      * @return Kolekce vyhledaných účastníků.
      */
-    Collection<Participant> getAbsent(long actionID);   
+    Collection<Participant> getAbsent(long actionID) throws SystemRegException;   
     /**
      * Vrátí všechny účastníky, kteří na dané akci mají dokončenou registraci.
      * @param actionID ID akce, pro kterou chceme vyhledat účastníky.
      * @return Kolekce vyhledaných účastníků.
      */
-    Collection<Participant> getCompleteRegParticipants(long actionID);
+    Collection<Participant> getCompleteRegParticipants(long actionID) throws SystemRegException;
     /**
      * Vrátí všechny účastníky, kteří na dané akci nemají dokončenou registraci.* 
      * @param actionID ID akce, pro kterou chceme vyhledat účastníky.
      * @return Kolekce vyhledaných účastníků.
      */
-    Collection<Participant> getIncompleteRegParticipants(long actionID);
+    Collection<Participant> getIncompleteRegParticipants(long actionID) throws SystemRegException;
     /**
      * Upraví přihlašovací údaje (jméno a heslo) danému účastníkovi, vyhledáného
      * podle parametru {@code id}.
@@ -97,7 +98,7 @@ public interface IParticipantFacade {
      * @throws SystemRegException Vygeneruje vyjímku pokud neexistuje žádný účastník
      * s daným ID.
      */
-    void editLogins(long id, String newLogin, String newPassword) throws SystemRegException;    
+    void editLogins(long id, long actionID, String newLogin, String newPassword) throws SystemRegException;    
     /**
      * Upraví povinné údaje (email, jméno, číslo OP / RČ) danému účastníkovi, 
      * vyhledaného podle jeho ID.
