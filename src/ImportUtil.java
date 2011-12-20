@@ -9,11 +9,8 @@ package businesstier.utils;
  * @author Vendik
  */
 import businesstier.IParticipantFacade;
-import businesstier.ParticipantFacade;
 import core.SystemRegException;
-import core.data_tier.entities.Participant;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,8 +18,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.StringTokenizer;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import presentation.Globals;
 
 /**
@@ -79,7 +74,6 @@ public class ImportUtil {
     public static void importAction(List<Integer> indexy, String file, long actionID) throws SystemRegException {
         BufferedReader bufRdr = null;
         List<String> parametry = new ArrayList<String>();
-        List<Participant> part = new ArrayList<Participant>();
         try {
             bufRdr = new BufferedReader(new FileReader(file));
             String line = bufRdr.readLine();
