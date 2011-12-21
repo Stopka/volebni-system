@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE XMI SYSTEM "UML_EA.dtd">
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3" timestamp="2011-12-06 11:27:41">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="Requirements Model" xmi.id="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_3BB0A215_82A4_4fda_963D_53A72C8832B8"/>
+						<UML:TaggedValue tag="ea_package_id" value="7"/>
+						<UML:TaggedValue tag="created" value="2005-11-19 09:02:21"/>
+						<UML:TaggedValue tag="modified" value="2005-11-19 09:02:21"/>
+						<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+						<UML:TaggedValue tag="lastloaddate" value="2005-11-19 09:02:21"/>
+						<UML:TaggedValue tag="lastsavedate" value="2005-11-19 09:26:01"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="2"/>
+						<UML:TaggedValue tag="packageFlags" value="isModel=1;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="2"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Funk&#269;ní požadavky" xmi.id="EAID_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Funk&#269;ní požadavky"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="package" value="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C"/>
+										<UML:TaggedValue tag="date_created" value="2005-11-19 08:57:37"/>
+										<UML:TaggedValue tag="date_modified" value="2011-10-30 20:10:10"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+										<UML:TaggedValue tag="package_name" value="Requirements Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="8"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="eventflags" value="LNK=ab31;"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Nefunk&#269;ní požadavky" xmi.id="EAID_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="Nefun&#269;ní požadavky"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="package" value="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C"/>
+										<UML:TaggedValue tag="date_created" value="2005-11-19 08:57:48"/>
+										<UML:TaggedValue tag="date_modified" value="2011-10-30 20:03:28"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08"/>
+										<UML:TaggedValue tag="package_name" value="Requirements Model"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="12"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="eventflags" value="LNK=b856;"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Package name="Funk&#269;ní požadavky" xmi.id="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Funk&#269;ní požadavky"/>
+								<UML:TaggedValue tag="parent" value="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C"/>
+								<UML:TaggedValue tag="created" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="modified" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+								<UML:TaggedValue tag="lastloaddate" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="lastsavedate" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Namespace.ownedElement>
+								<UML:Collaboration xmi.id="EAID_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015_Collaboration" name="Collaborations">
+									<UML:Namespace.ownedElement>
+										<UML:ClassifierRole name="Systém bude umož&#328;ovat vytvá&#345;ení nových uživatel&#367;." xmi.id="EAID_286F90F8_0930_4d7b_A824_D763DA347792" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="Každý uživatel bude moci vytvo&#345;it nového uživatele jehož role bude mít nižší práve než on. Nejvyšší role se bude napevno zadávat do databáze."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-30 20:06:09"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:09"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Funk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Lahvi"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="348"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B977DF1E-6CE3-4f05-B8D7-A4589D8CB40D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={286F90F8-0930-4d7b-A824-D763DA347792}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Sytém bude umož&#328;ovat vytvá&#345;ení &#269;i importování nových ú&#269;astník&#367;." xmi.id="EAID_3C7E0154_308E_45af_A6F0_ABE2F8CB7491" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="Importování bude umožn&#283;no z externího souboru .csv a vyvtá&#345;ení nových ú&#269;astník&#367; prob&#283;hne když ú&#269;astník nebude importován z externího souboru."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-18 22:07:56"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:15"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Funk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Ondra"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="59"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={910D4A60-136D-49c7-98D3-062C460DB66F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={3C7E0154-308E-45af-A6F0-ABE2F8CB7491}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Systém bude umož&#328;ovat ov&#283;&#345;ení uživatele pomocí jména a hesla " xmi.id="EAID_8E6C957E_15CE_4b2f_8A5F_8CCF28751DC0" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="Každý uživatel se bude moci p&#345;ihlásit do systému pomocí hesla a loginu. Tyto údaje se uživateli vygenerují p&#345;i zaregistrování a poté si je bude moci sám zm&#283;nit."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-18 22:08:34"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:06"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Funk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Ondra"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="61"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={9D679338-8029-45e4-A57B-2A6A8731091B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={8E6C957E-15CE-4b2f-8A5F-8CCF28751DC0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Systém bude umož&#328;ovat vytvá&#345;et a editovat volební akce" xmi.id="EAID_97321F8E_6E03_4aa7_A0B4_69D0698B22F8" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="Než se budou importovat &#269;i vytvá&#345;et noví uživatelé musí být vytvo&#345;ena n&#283;jaká volební akce. Tu budou moci uživatelé podle své role vytvá&#345;et."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-30 20:08:19"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:12"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Funk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Lahvi"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="349"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={FABE9E49-3D8C-40b9-908C-667B66178495}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={97321F8E-6E03-4aa7-A0B4-69D0698B22F8}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Systém bude umož&#328;ovat editaci uživatel&#367; &#269;i ú&#269;astník&#367;" xmi.id="EAID_A9BDC2BF_6726_4e10_A93E_74C2983EF828" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="Systém bude umož&#328;ovat každému uživateli editovat sám sebe a podle uživatelské role i ostaní uživatele. Bude také umož&#328;ovat editovat údaje ú&#269;astník&#367;, nebo je nap&#345;íklad odstra&#328;ovat."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-30 20:04:27"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:33:59"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Funk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Lahvi"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="347"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={CEEBA6EA-F4A0-4896-94CF-BF0E1D6298D3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Display;GUID={F76540D6-2D07-485f-A08F-8B7A0169F783};@ENDSTEREO;@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={A9BDC2BF-6726-4e10-A93E-74C2983EF828}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Systém bude umož&#328;ovat evidenci p&#345;ítomnosti ú&#269;astník&#367;" xmi.id="EAID_F6E91172_8964_4ac7_8E1F_EE6D079FDD50" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="U každého ú&#269;astník&#367;, bude možno v libovolném &#269;ase zjistit, zda-li byl zrovna na akci p&#345;ítomen nebo ne."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_2B8E95CC_A4DB_45fc_8DC2_7A9B16B03015"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-18 22:09:07"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:03"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Funk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Ondra"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="63"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={5C2CC9FD-D1BA-42df-9CE7-ECDBFC6D41ED}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={F6E91172-8964-4ac7-8E1F-EE6D079FDD50}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+									</UML:Namespace.ownedElement>
+									<UML:Collaboration.interaction/>
+								</UML:Collaboration>
+							</UML:Namespace.ownedElement>
+						</UML:Package>
+						<UML:Package name="Nefunk&#269;ní požadavky" xmi.id="EAPK_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="Nefun&#269;ní požadavky"/>
+								<UML:TaggedValue tag="parent" value="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C"/>
+								<UML:TaggedValue tag="created" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="modified" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="iscontrolled" value="FALSE"/>
+								<UML:TaggedValue tag="lastloaddate" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="lastsavedate" value="2005-11-19 09:02:21"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Namespace.ownedElement>
+								<UML:Collaboration xmi.id="EAID_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08_Collaboration" name="Collaborations">
+									<UML:Namespace.ownedElement>
+										<UML:ClassifierRole name="Systém bude používat souborovou databázi." xmi.id="EAID_05F84BAE_C8ED_4149_937C_7B3AFD26A98A" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-18 22:10:39"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:21"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Nefunk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Ondra"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="70"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6A446EB8-98D9-4783-8B1A-7186E2DAEAE5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={05F84BAE-C8ED-4149-937C-7B3AFD26A98A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Systém bude poskytovat databázi ú&#269;astník&#367; pro Mobilní hlasovací systém a pro systém EVolby." xmi.id="EAID_14460D99_0C4C_4919_BBB5_478F12F62FFA" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="Oba systémy, které registra&#269;ní systém spojuje si budou moci nahrát ú&#269;asníky z spole&#269;né databáze vytvo&#345;ené pro zragistrované ú&#269;astníky reg. systémem."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-18 22:09:51"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:18"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Nefunk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Ondra"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="67"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={5693808F-344F-4b49-AA8D-0ADB862245B7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={14460D99-0C4C-4919-BBB5-478F12F62FFA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+										<UML:ClassifierRole name="Systém pob&#283;ží na platform&#283; Java SE/EE " xmi.id="EAID_DE6A2F9B_8F92_4484_8F4C_F1D637452275" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+											<UML:ModelElement.taggedValue>
+												<UML:TaggedValue tag="documentation" value="U registra&#269;ního systému není pot&#345;eba p&#345;ístupu p&#345;es webový browser, bude p&#345;ístupný pouze na míst&#283; a proto bude použita stadadní edice Javy."/>
+												<UML:TaggedValue tag="isAbstract" value="false"/>
+												<UML:TaggedValue tag="isSpecification" value="false"/>
+												<UML:TaggedValue tag="ea_stype" value="Requirement"/>
+												<UML:TaggedValue tag="ea_ntype" value="0"/>
+												<UML:TaggedValue tag="version" value="1.0"/>
+												<UML:TaggedValue tag="package" value="EAPK_EB0265E5_DDDC_43c9_ACC2_D0E52CF77C08"/>
+												<UML:TaggedValue tag="date_created" value="2011-10-18 22:10:06"/>
+												<UML:TaggedValue tag="date_modified" value="2011-10-30 20:34:24"/>
+												<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+												<UML:TaggedValue tag="tagged" value="0"/>
+												<UML:TaggedValue tag="package_name" value="Nefunk&#269;ní požadavky"/>
+												<UML:TaggedValue tag="phase" value="1.0"/>
+												<UML:TaggedValue tag="author" value="Ondra"/>
+												<UML:TaggedValue tag="complexity" value="1"/>
+												<UML:TaggedValue tag="status" value="Proposed"/>
+												<UML:TaggedValue tag="tpos" value="0"/>
+												<UML:TaggedValue tag="ea_localid" value="68"/>
+												<UML:TaggedValue tag="ea_eleType" value="element"/>
+												<UML:TaggedValue tag="difficulty" value="Medium"/>
+												<UML:TaggedValue tag="priority" value="Medium"/>
+												<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+												<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DA0622F5-2BEF-4564-A855-6621F651B309}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Functional;GUID={2C349229-EA72-48e5-B81C-048FAF97B4DB};@ENDSTEREO;$DES;$CLT={DE6A2F9B-8F92-4484-8F4C-F1D637452275}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+											</UML:ModelElement.taggedValue>
+										</UML:ClassifierRole>
+									</UML:Namespace.ownedElement>
+									<UML:Collaboration.interaction/>
+								</UML:Collaboration>
+							</UML:Namespace.ownedElement>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:Diagram name="Requirements Model" xmi.id="EAID_84F8C576_DBDE_48b0_808A_A1C67F987B7D" diagramType="ClassDiagram" owner="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="created_date" value="2011-11-08 23:17:55"/>
+				<UML:TaggedValue tag="modified_date" value="2011-11-08 23:17:55"/>
+				<UML:TaggedValue tag="package" value="EAPK_BA68620D_E8FD_4bfd_AB80_FB5DD7FFC58C"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="77"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=Information Engineering;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=0;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=Information Engineering;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=Extended::Data Modeling;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+			</UML:ModelElement.taggedValue>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>
