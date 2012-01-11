@@ -2,10 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
         <file>
-            <url>src/cz/cvut/fel/mvod/gui/settings/panels/ConnectivityPanel.java</url>
-            <line>128</line>
-        </file>
-        <file>
             <url>src/cz/cvut/fel/mvod/gui/settings/panels/PrologueSettingsPanel.java</url>
             <line>396</line>
         </file>
@@ -13,5 +9,17 @@
             <url>src/cz/cvut/fel/mvod/gui/MobileVotingDevice.java</url>
             <line>62</line>
         </file>
+        <file>
+            <url>src/cz/cvut/fel/mvod/gui/settings/panels/ConnectivityPanel.java</url>
+            <line>128</line>
+        </file>
     </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/stopka/Veřejné/Programovani/java/Evolby/mobilni-hlasovaci-system/src/cz/cvut/fel/mvod/persistence/regsys/RegSysDAOImpl.java</file>
+        <file>file:/home/stopka/Veřejné/Programovani/java/Evolby/mobilni-hlasovaci-system/test/cz/cvut/fel/mvod/persistence/regsys/commonInterface/ParticipantDAOTest.java</file>
+        <file>file:/home/stopka/Veřejné/Programovani/java/Evolby/mobilni-hlasovaci-system/src/cz/cvut/fel/mvod/persistence/regsys/commonInterface/ParticipantDAO.java</file>
+        <file>file:/home/stopka/Veřejné/Programovani/java/Evolby/mobilni-hlasovaci-system/test/cz/cvut/fel/mvod/persistence/regsys/RegSysDAOImplTest.java</file>
+        <file>file:/home/stopka/Veřejné/Programovani/java/Evolby/mobilni-hlasovaci-system/nbproject/build-impl.xml</file>
+        <file>file:/home/stopka/Veřejné/Programovani/java/Evolby/mobilni-hlasovaci-system/test/cz/cvut/fel/mvod/persistence/derby/DerbyVoteDAOTest.java</file>
+    </open-files>
 </project-private>
